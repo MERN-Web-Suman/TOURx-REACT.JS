@@ -1,6 +1,6 @@
-# Tou-Rx React.js Project
+# 🌍 Tou-Rx | React.js Travel App ✈️
 
-[Live Demo](https://tou-rx-react-js.vercel.app/)
+[🚀 you visit this website](https://tou-rx-react-js.vercel.app/)
 
 ---
 
@@ -45,6 +45,13 @@ Whether you are a travel enthusiast or a developer looking to learn advanced **R
 ---
 
 ## Deploy By Vercel
+This project is deployed on **Vercel**, making it accessible online with a single click. Visit the live demo: [🚀 https://tou-rx-react-js.vercel.app/](https://tou-rx-react-js.vercel.app/)
+
+---
+
+## License
+This project is licensed under the MIT License.
+
 This project is deployed on **Vercel**, making it accessible online with a single click. Visit the live demo: [https://tou-rx-react-js.vercel.app/](https://tou-rx-react-js.vercel.app/)
 
 ---
