@@ -1,56 +1,74 @@
 
-// src/components/Footer.jsx
-import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+// Footer.jsx
+import React, { useEffect } from "react";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-export default function Footer() {
+const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1200 });
+  }, []);
+
+  const quickLinks = ["Destinations", "Packages", "Blog", "Contact"];
+  const socialIcons = [
+    { icon: <FaFacebookF />, link: "https://facebook.com" },
+    { icon: <FaTwitter />, link: "https://twitter.com" },
+    { icon: <FaInstagram />, link: "https://instagram.com" },
+    { icon: <FaLinkedinIn />, link: "https://linkedin.com" },
+  ];
+
   return (
-    <footer className="bg-gradient-to-r from-purple-900 via-indigo-900 to-black text-white py-10 mt-16">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
-        
-        {/* Logo & About */}
-        <div>
-          <h2 className="text-2xl font-bold mb-3">Suman Kumar</h2>
-          <p className="text-gray-300 text-sm">
-            Full Stack Developer passionate about creating modern, user-friendly, and high-performance web applications.
-          </p>
-        </div>
-
+    <footer className="bg-gray-900 text-gray-200 py-12">
+      <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8">
         {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li className="hover:text-white transition duration-300 cursor-pointer">Home</li>
-            <li className="hover:text-white transition duration-300 cursor-pointer">Projects</li>
-            <li className="hover:text-white transition duration-300 cursor-pointer">Awards</li>
-            <li className="hover:text-white transition duration-300 cursor-pointer">Contact</li>
+        <div data-aos="fade-up">
+          <h3 className="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+          <ul>
+            {quickLinks.map((link) => (
+              <li
+                key={link}
+                className="mb-2 cursor-pointer text-gray-300 hover:text-pink-500 transition-colors duration-300"
+              >
+                {link}
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Social Media */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
-          <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-purple-500 transition duration-300">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-purple-500 transition duration-300">
-              <FaTwitter />
-            </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-purple-500 transition duration-300">
-              <FaLinkedinIn />
-            </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-purple-500 transition duration-300">
-              <FaGithub />
-            </a>
+        {/* Contact Info */}
+        <div data-aos="fade-up" data-aos-delay="200">
+          <h3 className="text-xl font-semibold mb-4 text-white">Contact Info</h3>
+          <p className="mb-2">📍 123 Travel Street, Wanderlust City</p>
+          <p className="mb-2">📞 +91 9876543210</p>
+          <p>✉️ info@tourapp.com</p>
+        </div>
+
+        {/* Social Icons */}
+        <div data-aos="fade-up" data-aos-delay="400">
+          <h3 className="text-xl font-semibold mb-4 text-white">Follow Us</h3>
+          <div className="flex space-x-4">
+            {socialIcons.map((item, index) => (
+              <a
+                key={index}
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 rounded-full bg-gray-800 hover:bg-gradient-to-r from-pink-500 to-purple-500 text-white transform hover:scale-110 transition-all duration-300"
+              >
+                {item.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Bottom Copyright */}
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Suman Kumar. All rights reserved.
+      {/* Copyright */}
+      <div className="mt-10 text-center text-gray-500 text-sm" data-aos="fade-up" data-aos-delay="600">
+        © {new Date().getFullYear()} TourApp. All rights reserved.
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

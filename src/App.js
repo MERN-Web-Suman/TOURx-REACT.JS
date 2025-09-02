@@ -1,34 +1,33 @@
-import React from "react";
-import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.jsx";
-import ClientsSection from "./components/ClientsSection.jsx";
-import MySkillPage from "./components/MySkillPage.jsx";
-import ProjectsPage from "./components/ProjectsPage.jsx";
-import MyResume from "./components/MyResume.jsx";
-import ClientFeedback from "./components/ClientFeedback.jsx";
-import Achievements from "./components/Achievements.jsx";
-import ServicesPricing from "./components/ServicesPricing.jsx";
-import ContactPage from "./components/ContactPage.jsx";
-import Awards from "./components/Awards.jsx";
-import Footer from "./components/Footer.jsx";
 
-function App() {
+
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Packages from "./components/Packages";
+import { Toaster } from "react-hot-toast";
+import WhyChooseUs from "./components/WhyChooseUs";
+import Testimonials from "./components/Testimonials";
+import Sponsors from "./components/Sponsors";
+import FeatureProjects from "./components/FeatureProjects";
+import BlogSection from "./components/BlogSection";
+import NewsletterSubscription from "./components/NewsletterSubscription";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+
+export default function App() {
   return (
     <div>
-      <Header></Header>
-      <Hero></Hero>
-      <ClientsSection></ClientsSection>
-      <MySkillPage/>
-      <ProjectsPage/>
-      <MyResume/>
-      <ClientFeedback/>
-      <Achievements/>
-      <Awards/>
-      <ServicesPricing />
-      <ContactPage/>
-      <Footer/>
+      <Navbar />
+      <HeroSection />
+         <Packages />
+         <WhyChooseUs />
+         <Testimonials/>
+         <Sponsors/>
+         <FeatureProjects/>
+         <BlogSection/>
+         <NewsletterSubscription/>
+         <ContactSection/>
+         <Footer/>
+      <Toaster position="top-center" reverseOrder={false} />
     </div>
   );
 }
-
-export default App;

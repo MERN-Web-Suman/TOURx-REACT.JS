@@ -8,19 +8,19 @@ module.exports = {
         primary : "#fea928",
         secondary: "#ed8900",
       },
-        animation: {
-        gradientX: "gradientX 8s ease infinite",
-      },
-       keyframes: {
-        gradientX: {
-          "0%, 100%": {
-            backgroundPosition: "0% 50%",
-          },
-          "50%": {
-            backgroundPosition: "100% 50%",
-          },
+          keyframes: {
+        "gradient-x": {
+          "0%, 100%": { "background-position": "0% 50%" },
+          "50%": { "background-position": "100% 50%" },
         },
       },
+        animation: {
+        "gradient-x": "gradient-x 10s ease infinite",
+      },
+        backgroundSize: {
+        "size-200": "200% 200%",
+      },
+  
       fontFamily : {
         sans : ["poppins","sans-serif"],
       },
