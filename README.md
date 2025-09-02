@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Tou-Rx React.js Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://tou-rx-react-js.vercel.app/)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Overview
+Tou-Rx is a responsive and modern **React.js tour application** designed to showcase popular destinations, packages, and travel blogs. The project includes animations, hover effects, and interactive UI elements to enhance user experience.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Why Tou-Rx is Unique
+Travel websites often struggle to provide both aesthetics and functionality. **Tou-Rx** solves this problem by combining modern design with smooth interactivity. With animated hero sections, hover effects on cards, and interactive modals, users get an immersive experience while exploring destinations and packages.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Key highlights:  
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices.  
+- **Interactive UI Elements**: Hover/tilt effects on destination and package cards for better engagement.  
+- **Smooth Animations**: Powered by **AOS**, making scrolling visually appealing.  
+- **Modular Architecture**: Components are reusable and easy to maintain.  
+- **User-Friendly Navigation**: Quick links, clear sections, and CTA buttons enhance usability.  
 
-### `npm test`
+Whether you are a travel enthusiast or a developer looking to learn advanced **React.js UI techniques**, Tou-Rx demonstrates how to combine modern frontend features with an elegant design.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
+- Hero section with animated background  
+- Popular Destinations & Packages sections with tilt/hover effects  
+- Interactive buttons and modals for detailed content  
+- Blog section with “Read More” modal popups  
+- Footer with social links, contact info, and quick navigation  
+- Smooth animations using **AOS (Animate On Scroll)**  
+- Premium color schemes and hover effects  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
+- **React.js**  
+- **Tailwind CSS**  
+- **AOS (Animate On Scroll)**  
+- **React-Slick Slider**  
+- **React Router DOM**  
+- **React Hot Toast** (for notifications)  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Deploy By Vercel
+This project is deployed on **Vercel**, making it accessible online with a single click. Visit the live demo: [https://tou-rx-react-js.vercel.app/](https://tou-rx-react-js.vercel.app/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License.
